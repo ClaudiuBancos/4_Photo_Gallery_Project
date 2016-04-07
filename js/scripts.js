@@ -6,7 +6,7 @@ OVERLAY PREP WORK AND FUNCTIONS
 
 // These are basic elements the lightbox overlay uses.
 var $overlay = $('<div id="overlay"></div>');
-var $container_div = $("<div class='display-image'></div>")
+var $container_div = $("<div class='display-image'></div>");
 var $image = $("<img>");
 var $video = $("<iframe frameborder='0' allowfullscreen></iframe>");
 var $caption = $("<p></p>");
@@ -155,12 +155,7 @@ function bootArrowKeys() {
 SEARCH BAR FUNCTIONS
 *******************************************************/
 
-// The first two functions here should be self-explanatory.
-
-function emptyGallery() {
-	$("#gallery a").fadeOut(1000);
-}
-
+// The first function here should be self-explanatory.
 function showAllAssets() {
 	for (var i=0; i <= 15; i++) {
 		$("#gallery").append(
