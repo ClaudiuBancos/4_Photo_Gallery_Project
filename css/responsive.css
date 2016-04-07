@@ -1,0 +1,163 @@
+/*	Note that the default website apart from this responsive.css file is optimized for mobile devices in portrait mode. */
+
+
+/******************************************************
+MOBILE DEVICES IN LANDSCAPE MODE
+*******************************************************/
+
+@media (orientation: landscape) {
+
+/*------------Lightbox Overlay------------*/
+
+	#overlay .display-image {
+		height: 70vh;
+		width: auto;
+		max-width: 80%;
+		margin-top: 5vh;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 5vh;
+	}
+
+	iframe,
+	#overlay .display-image img {
+		height: 70vh;
+	}
+
+	#overlay .display-image img {
+		width: auto;
+	}
+
+	iframe {
+		width: 100vh;
+	}
+
+	#overlay .button {
+		max-width: 10%;
+		height: auto;
+	}
+
+	#overlay .back_button {
+		position: absolute;
+		left: 0;
+		top: 35vh;
+	}
+
+	#overlay .forward_button {
+		position: absolute;
+		right: 0;
+		top: 35vh;
+	}
+
+}
+
+@media (orientation: landscape) and (max-aspect-ratio: 10/7) {
+	#overlay .display-image {
+		margin-top: 12vh;
+	}
+
+	#overlay .display-image img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+/******************************************************
+MEDIUM-SIZED GALLERY (and caption font)
+*******************************************************/
+
+@media (min-width: 700px) {
+
+
+/*------------Image Gallery------------*/
+
+	a {
+		display: inline-block;
+		width: 28.3333%;
+	}
+
+	a:nth-of-type(odd) {
+		float: none;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
+	}
+
+	a:nth-of-type(even) {
+		float: none;
+		margin-right: 2.5%;
+		margin-left: 2.5%;
+	}
+
+	a:nth-of-type(1+3n) {
+		float: left;
+	}
+
+
+/*------------Lightbox Overlay------------*/
+
+	#overlay .display-image {
+		margin-bottom: 4vh;
+	}
+
+	#overlay p {
+		font-size: 20px;
+		max-width: 600px;
+		margin: auto;
+		text-align: left;
+		line-height: 26px;
+	}
+
+
+
+
+}
+
+/******************************************************
+FULL VERSION
+*******************************************************/
+
+@media (min-width: 1064px) {
+
+	#gallery {
+		max-width: 1040px;
+		margin: 0 auto;
+	}
+
+	a {
+		width: auto;
+		max-width: 200px;
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+
+	a:nth-of-type(odd) {
+		float: none;
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+
+	a:nth-of-type(even) {
+		float: none;
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+
+	a:nth-of-type(1+3n) {
+		float: none;
+	}
+
+	a:nth-of-type(1+5n) {
+		float: left;
+	}
+
+	#overlay .back_button {
+		margin-left: 5%;
+		margin-right: 0;
+	}
+
+	#overlay .forward_button {
+		margin-left: 0;
+		margin-right: 5%;
+	}
+
+}
